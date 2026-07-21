@@ -54,6 +54,8 @@
   .hero p.lead{font-size:1.14rem;color:var(--ink-soft);margin-bottom:30px;max-width:34ch}
   .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
   .hero-card{background:var(--white);border:1px solid var(--line);border-radius:22px;padding:30px;box-shadow:var(--shadow)}
+  .hero-photo{display:flex;flex-direction:column;align-items:center;text-align:center;margin-bottom:18px}
+  .hero-photo img{width:128px;height:128px;border-radius:50%;object-fit:cover;border:4px solid var(--teal-light);box-shadow:0 6px 20px rgba(14,124,107,.22)}
   .hero-card h3{font-size:1.15rem;margin-bottom:14px}
   .cred{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);align-items:flex-start}
   .cred:last-child{border:none;padding-bottom:0}
@@ -154,7 +156,8 @@
       </div>
     </div>
     <div class="hero-card">
-      <h3>Dott. Domenico Bruno Pagano</h3>
+      <div class="hero-photo"><img src="dott-pagano-foto.jpg" alt="Dott. Domenico Bruno Pagano"></div>
+      <h3 style="text-align:center">Dott. Domenico Bruno Pagano</h3>
       <div class="cred"><span class="ico">🩺</span><div><b>Anestesista · Rianimatore</b><span>Specialista in Anestesia e Rianimazione</span></div></div>
       <div class="cred"><span class="ico">🎯</span><div><b>Terapia del Dolore</b><span>Diagnosi e trattamento del dolore acuto e cronico</span></div></div>
       <div class="cred"><span class="ico">💧</span><div><b>Ossigeno-Ozono Terapia</b><span>Trattamenti infiltrativi e sistemici</span></div></div>
