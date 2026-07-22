@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://domenicobrunopagano-collab.github.io/dott-pagano/sitemap.xml
+Sitemap: https://ozonomilano.com/sitemap.xml
