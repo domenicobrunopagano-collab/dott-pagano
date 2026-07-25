@@ -63,6 +63,7 @@
   :root{
     --bg:#f6faf8;--ink:#0f2b27;--ink-soft:#42615b;--teal:#0e7c6b;--teal-dark:#0a5c50;--teal-deep:#062b26;
     --teal-light:#e3f2ee;--gold:#c9a15a;--gold-soft:#e7d3ab;--white:#fff;--line:#dde9e5;--shadow:0 18px 50px rgba(6,43,38,.14);
+    --cta:#f26a3d;--cta-dark:#d9522a;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
@@ -75,22 +76,21 @@
   .eyebrow{display:inline-block;font-weight:600;font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
   .btn{display:inline-flex;align-items:center;gap:.55em;background:var(--teal);color:#fff;padding:15px 32px;border-radius:999px;text-decoration:none;font-weight:600;transition:.25s}
   .btn:hover{background:var(--teal-dark);transform:translateY(-2px)}
-  .btn-gold{background:var(--gold);color:#241a06}.btn-gold:hover{background:#b98f45}
+  .btn-gold{background:var(--cta);color:#fff}.btn-gold:hover{background:var(--cta-dark)}
   .btn-ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.6)}
   .btn-ghost:hover{background:rgba(255,255,255,.12);border-color:#fff;transform:translateY(-2px)}
 
-  header{position:fixed;top:0;left:0;right:0;z-index:60;transition:.3s}
-  header.scrolled{background:rgba(6,43,38,.94);backdrop-filter:blur(12px);box-shadow:0 2px 20px rgba(0,0,0,.2)}
-  .nav{display:flex;align-items:center;justify-content:space-between;height:76px}
-  .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff}
-  .brand .mark{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--gold-soft));color:var(--teal-deep);display:grid;place-items:center;font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:700}
-  .brand .name{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:600;line-height:1}
-  .brand .name small{display:block;font-family:'Inter';font-weight:500;font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold-soft);margin-top:3px}
+  header{position:fixed;top:0;left:0;right:0;z-index:60;transition:.3s;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  header.scrolled{box-shadow:0 4px 20px rgba(6,43,38,.10)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:84px}
+  .brand{display:flex;align-items:center;text-decoration:none}
+  .brand img.logo-top{height:58px;width:auto;display:block}
   .nav-links{display:flex;gap:26px;align-items:center}
-  .nav-links a{text-decoration:none;font-weight:500;font-size:.9rem;color:rgba(255,255,255,.85)}
-  .nav-links a:hover{color:#fff}
-  .nav-links .btn{color:#241a06}
+  .nav-links a{text-decoration:none;font-weight:500;font-size:.9rem;color:var(--ink-soft)}
+  .nav-links a:hover{color:var(--teal)}
+  .nav-links .btn{color:#fff}
   @media(max-width:980px){.nav-links a:not(.btn){display:none}}
+  @media(max-width:520px){.brand img.logo-top{height:46px}}
 
   .hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;background:var(--teal-deep)}
   .hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.42;mix-blend-mode:screen}
@@ -212,8 +212,7 @@
 <header id="site-header">
   <div class="wrap nav">
     <a class="brand" href="#top">
-      <span class="mark">P</span>
-      <span class="name">Dott. Domenico Bruno Pagano<small>Terapia del Dolore · Ozonoterapia</small></span>
+      <img class="logo-top" src="logo-pagano.png" alt="Dott. Domenico Bruno Pagano — Terapia del Dolore e Ossigeno-Ozono Terapia">
     </a>
     <nav class="nav-links">
       <a href="#infiammazione">Infiammazione</a>
@@ -474,8 +473,8 @@
   <div class="wrap">
     <div class="fgrid">
       <div>
-        <a class="brand" href="#top"><span class="mark">P</span><span class="name" style="color:#fff">Dott. Domenico Bruno Pagano<small>Terapia del Dolore · Ozonoterapia</small></span></a>
-        <p style="max-width:42ch;margin-top:12px">Anestesista-Rianimatore, specialista in terapia del dolore e ossigeno-ozono terapia. Trattamento dell'infiammazione cronica e dei processi degenerativi osteoarticolari a Segrate (Milano).</p>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.35rem;color:#fff;font-weight:600">Dott. Domenico Bruno Pagano</div>
+        <p style="max-width:42ch;margin-top:10px">Anestesista-Rianimatore, specialista in terapia del dolore e ossigeno-ozono terapia. Trattamento dell'infiammazione cronica e dei processi degenerativi osteoarticolari a Segrate (Milano).</p>
       </div>
       <div style="display:flex;gap:20px;flex-wrap:wrap;align-items:flex-start;padding-top:6px">
         <a href="#infiammazione">Infiammazione</a><a href="#degenerazione">Degenerazione</a><a href="#ozonoterapia">Ozonoterapia</a><a href="#patologie">Patologie</a><a href="#faq">FAQ</a><a href="#prenota">Prenota</a>
