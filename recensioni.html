@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lascia una recensione | Dott. Domenico Bruno Pagano — Ozonoterapia Milano</title>
+<meta name="description" content="Hai fatto una visita o un trattamento di ossigeno-ozono terapia con il Dott. Domenico Bruno Pagano? Lascia una recensione: scegli la sede e la piattaforma.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://ozonomilano.com/recensioni.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#f6faf8;--ink:#0f2b27;--ink-soft:#42615b;--teal:#0e7c6b;--teal-dark:#0a5c50;--teal-deep:#062b26;--teal-light:#e3f2ee;--gold:#c9a15a;--white:#fff;--line:#dde9e5;--shadow:0 18px 50px rgba(6,43,38,.14);--cta:#f26a3d;--cta-dark:#d9522a;--star:#f5b301}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased;min-height:100vh}
+  h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;line-height:1.15}
+  a{color:inherit}
+  .wrap{max-width:640px;margin:0 auto;padding:0 22px}
+  .topbar{background:#fff;border-bottom:1px solid var(--line);padding:18px 0;text-align:center}
+  .topbar img{height:70px;width:auto}
+  .hero-r{background:linear-gradient(135deg,var(--teal-deep),var(--teal-dark));color:#fff;text-align:center;padding:48px 0 40px}
+  .hero-r .eyebrow{font-weight:600;font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:12px}
+  .hero-r h1{color:#fff;font-size:clamp(1.9rem,5vw,2.6rem);margin-bottom:12px}
+  .hero-r p{color:rgba(255,255,255,.85);max-width:44ch;margin:0 auto;font-size:1.02rem}
+
+  /* riepilogo cumulativo (mostrato solo con numeri reali) */
+  .summary{background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);max-width:520px;margin:-26px auto 0;padding:22px 26px;display:flex;align-items:center;justify-content:center;gap:18px;position:relative;z-index:2}
+  .summary .score{font-family:'Cormorant Garamond',serif;font-size:2.6rem;font-weight:700;color:var(--teal-dark);line-height:1}
+  .summary .stars{color:var(--star);font-size:1.15rem;letter-spacing:2px}
+  .summary .count{color:var(--ink-soft);font-size:.9rem;margin-top:3px}
+
+  main{padding:44px 0 30px}
+  .intro{text-align:center;color:var(--ink-soft);margin-bottom:26px}
+  .loc{background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:0 6px 20px rgba(6,43,38,.06);padding:24px 24px 26px;margin-bottom:20px}
+  .loc h3{font-size:1.45rem;margin-bottom:2px}
+  .loc .addr{color:var(--ink-soft);font-size:.92rem;margin-bottom:18px}
+  .loc .btns{display:flex;flex-direction:column;gap:11px}
+  .rbtn{display:flex;align-items:center;justify-content:center;gap:.5em;padding:15px 20px;border-radius:14px;text-decoration:none;font-weight:600;font-size:1rem;transition:.2s}
+  .rbtn:hover{transform:translateY(-2px)}
+  .rbtn.google{background:#fff;border:1.5px solid var(--line);color:var(--ink)}
+  .rbtn.google:hover{border-color:var(--star);box-shadow:0 6px 18px rgba(6,43,38,.1)}
+  .rbtn.google .g{color:var(--star)}
+  .rbtn.md{background:var(--teal);color:#fff}
+  .rbtn.md:hover{background:var(--teal-dark)}
+  .soon{background:var(--bg);border:1px dashed var(--line);border-radius:20px;padding:22px 24px;text-align:center;color:var(--ink-soft);font-size:.94rem}
+  .backlink{display:inline-flex;gap:.4em;color:var(--teal-dark);text-decoration:none;font-weight:600;font-size:.95rem}
+  footer{text-align:center;color:var(--ink-soft);font-size:.8rem;padding:30px 22px 40px}
+  footer a{color:var(--teal-dark);text-decoration:none}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a href="index.html"><img src="logo-pagano.png" alt="Dott. Domenico Bruno Pagano"></a>
+</div>
+
+<section class="hero-r">
+  <div class="wrap">
+    <span class="eyebrow">La tua opinione conta</span>
+    <h1>Lascia una recensione</h1>
+    <p>Grazie per aver scelto le mie cure. Il tuo parere aiuta altri pazienti e mi permette di migliorare. Scegli la sede in cui sei stato visitato.</p>
+  </div>
+</section>
+
+<!-- RIEPILOGO CUMULATIVO — attivare inserendo i numeri reali e togliendo style="display:none" -->
+<div class="summary" style="display:none">
+  <div class="score" id="avg">—</div>
+  <div>
+    <div class="stars" id="stars">★★★★★</div>
+    <div class="count" id="count">su <span id="tot">—</span> recensioni verificate</div>
+  </div>
+</div>
+
+<main>
+  <div class="wrap">
+    <p class="intro">Bastano 30 secondi. Tocca il pulsante della piattaforma che preferisci.</p>
+
+    <!-- SEDE: Segrate -->
+    <div class="loc">
+      <h3>Poliambulatorio Fisiobenessere</h3>
+      <div class="addr">Via Cesare Battisti 3 · Segrate (MI)</div>
+      <div class="btns">
+        <a class="rbtn google" href="https://www.google.com/maps/search/?api=1&query=Poliambulatorio+Fisiobenessere+Segrate+Dott+Pagano" target="_blank" rel="noopener"><span class="g">★</span> Recensione su Google</a>
+        <a class="rbtn md" href="https://www.miodottore.it/domenico-bruno-pagano/anestesista/segrate#opinions" target="_blank" rel="noopener">Recensione su MioDottore</a>
+      </div>
+    </div>
+
+    <!-- ALTRE SEDI: verranno aggiunte con i link reali -->
+    <div class="soon">
+      Le altre sedi in cui opero saranno aggiunte qui a breve, ciascuna con il proprio pulsante di recensione.
+    </div>
+
+    <p style="text-align:center;margin-top:26px"><a class="backlink" href="index.html">← Torna al sito</a></p>
+  </div>
+</main>
+
+<footer>
+  © <span id="yy"></span> Dott. Domenico Bruno Pagano · Iscritto ODM n. 48864 · <a href="index.html">ozonomilano.com</a>
+</footer>
+<script>document.getElementById('yy').textContent=new Date().getFullYear();</script>
+</body>
+</html>
