@@ -40,6 +40,8 @@
   "areaServed":["Segrate","Milano","Lombardia"],
   "availableService":[
     {"@type":"MedicalTherapy","name":"Ossigeno-ozono terapia"},
+    {"@type":"MedicalTherapy","name":"Ozonoterapia sistemica (grande e piccola autoemoinfusione)"},
+    {"@type":"MedicalTherapy","name":"Terapia endovenosa (EV Therapy)"},
     {"@type":"MedicalTherapy","name":"Terapia del dolore"},
     {"@type":"MedicalTherapy","name":"Terapie infiltrative"}
   ]
@@ -119,6 +121,10 @@
   .prose b{color:var(--ink)}
 
   .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+  .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+  .lit{display:inline-block;margin-top:14px;font-size:.82rem;font-weight:600;color:var(--teal-dark);text-decoration:none;border-bottom:1px solid var(--gold-soft)}
+  .lit:hover{color:var(--cta);border-color:var(--cta)}
+  .card .fn{display:block;color:var(--teal-dark);font-weight:600;font-size:.82rem;letter-spacing:.04em;text-transform:uppercase;margin-bottom:6px}
   .card{background:var(--bg);border:1px solid var(--line);border-radius:20px;padding:32px 28px;transition:.25s}
   .alt .card{background:var(--bg)}
   .card:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:var(--gold-soft)}
@@ -204,7 +210,7 @@
 
   @media(max-width:980px){.path{grid-template-columns:repeat(2,1fr)}}
   @media(max-width:860px){
-    .grid-3,.effects,.contact-grid,.pat-list{grid-template-columns:1fr}
+    .grid-3,.grid-2,.effects,.contact-grid,.pat-list{grid-template-columns:1fr}
     .about,.ozono-split,.inflam-grid{grid-template-columns:1fr;gap:34px}
     .path{grid-template-columns:1fr}
     section{padding:62px 0}
@@ -222,6 +228,7 @@
       <a href="#infiammazione">Infiammazione</a>
       <a href="#degenerazione">Degenerazione</a>
       <a href="#ozonoterapia">Ozonoterapia</a>
+      <a href="#ev-therapy">Terapie EV</a>
       <a href="#patologie">Patologie</a>
       <a href="recensioni.html">Recensioni</a>
       <a href="#contatti">Contatti</a>
@@ -321,6 +328,99 @@
       <div class="effect"><h3>Azione antinocicettiva</h3><p>Riduce la sensibilizzazione delle terminazioni nervose e il dolore, con evidenze particolarmente solide nel dolore lombare da ernia del disco.</p></div>
       <div class="effect"><h3>Azione antiossidante e anti-aging</h3><p>Potenzia le difese antiossidanti endogene, sostenendo l'equilibrio redox alla base dei processi di invecchiamento e degenerazione dei tessuti.</p></div>
     </div>
+  </div>
+</section>
+
+<!-- OZONOTERAPIA SISTEMICA -->
+<section id="ozono-sistemica">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="divider"></div>
+      <span class="eyebrow">Ozonoterapia sistemica</span>
+      <h2>Le autoemoinfusioni: grande e piccola</h2>
+      <p>Oltre alle infiltrazioni locali, l'ozono può agire su tutto l'organismo attraverso il sangue, con un effetto antiossidante e immunomodulante sistemico.</p>
+    </div>
+    <div class="grid-2">
+      <div class="card">
+        <span class="fn">GAE</span>
+        <h3>Grande autoemoinfusione</h3>
+        <p>Un volume di sangue venoso (in genere 100–200 ml) viene prelevato in circuito chiuso e sterile, miscelato con una quantità precisa di ossigeno-ozono a concentrazione controllata (tipicamente 10–40 µg/mL) e reinfuso. Il ciclo abituale è di 5–10 sedute settimanali, ripetibile 1–2 volte l'anno. Stimola le difese antiossidanti (via Nrf2), modula la risposta immunitaria e migliora l'ossigenazione dei tessuti e il microcircolo.</p>
+      </div>
+      <div class="card">
+        <span class="fn">PAE</span>
+        <h3>Piccola autoemoinfusione</h3>
+        <p>Una piccola quantità di sangue (pochi millilitri) viene miscelata con ozono e reiniettata per via intramuscolare. Agisce soprattutto come stimolo immunomodulante — una sorta di "autovaccino" biologico — utile in alcuni quadri allergici e immunitari. È una procedura rapida e ambulatoriale.</p>
+      </div>
+    </div>
+    <div class="pat-list" style="margin-top:34px">
+      <div class="pat"><b>Patologie vascolari e del microcircolo</b><span>Arteriopatie periferiche, insufficienza venosa, gambe pesanti.</span></div>
+      <div class="pat"><b>Astenia e stress ossidativo</b><span>Stanchezza cronica, sindrome da fatica, supporto al recupero.</span></div>
+      <div class="pat"><b>Supporto immunitario e post-virale</b><span>Compreso il sostegno nelle sindromi post-COVID.</span></div>
+      <div class="pat"><b>Malattie infiammatorie e degenerative croniche</b><span>Come supporto sistemico al percorso di cura.</span></div>
+    </div>
+    <p class="disclaimer" style="margin-top:24px"><b>Letteratura di riferimento.</b> Rassegne e classificazioni delle evidenze sull'ozono sistemico e sulle autoemoinfusioni: <a href="https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2026.1859221/full" target="_blank" rel="noopener">Medical ozone: mechanisms, biological effects and clinical evidence — Frontiers in Medicine (2026)</a> · <a href="https://link.springer.com/article/10.1186/s40001-024-01976-4" target="_blank" rel="noopener">Ozone therapy in musculoskeletal medicine — Eur J Med Res (2024)</a> · <a href="https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2026.1720578/full" target="_blank" rel="noopener">Major ozone autohemotherapy nella sindrome post-COVID — Frontiers (2026)</a> · <a href="https://isco3.org/wp-content/uploads/2017/03/ISCO3-MET-00-01-MAHT-V1-03102016.pdf" target="_blank" rel="noopener">ISCO3 — Metodologia della Grande Autoemoterapia</a>. Le indicazioni sono possibili applicazioni valutate dal medico caso per caso.</p>
+  </div>
+</section>
+
+<!-- EV THERAPY -->
+<section id="ev-therapy" class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="divider"></div>
+      <span class="eyebrow">Terapia endovenosa · EV Therapy</span>
+      <h2>Infusioni antiossidanti e della longevità</h2>
+      <p>Somministrazione per via endovenosa di molecole ad azione antiossidante e metabolica, in protocolli personalizzati definiti dal medico dopo valutazione clinica. Di seguito le principali, con la loro funzione e un riferimento di letteratura.</p>
+    </div>
+    <div class="grid-3">
+      <div class="card">
+        <span class="fn">Antiossidante endogeno</span>
+        <h3>Glutatione</h3>
+        <p>Il principale antiossidante prodotto dall'organismo ("master antioxidant"): neutralizza i radicali liberi, sostiene la detossificazione epatica e protegge le cellule dallo stress ossidativo. Per via endovenosa le evidenze cliniche sono ancora limitate.</p>
+        <a class="lit" href="https://www.sciencedirect.com/science/article/pii/S0753332225003919" target="_blank" rel="noopener">Letteratura ↗</a>
+      </div>
+      <div class="card">
+        <span class="fn">Precursore del glutatione</span>
+        <h3>N-acetilcisteina (NAC)</h3>
+        <p>Ricostituisce le scorte di glutatione, con azione antiossidante, mucolitica e anti-infiammatoria. È una molecola di impiego clinico consolidato in numerose applicazioni.</p>
+        <a class="lit" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11499967/" target="_blank" rel="noopener">Letteratura ↗</a>
+      </div>
+      <div class="card">
+        <span class="fn">Metabolismo energetico</span>
+        <h3>NAD⁺</h3>
+        <p>Coenzima centrale nella produzione di energia cellulare e nella riparazione del DNA; i suoi livelli tendono a ridursi con l'età. Impiegato nei protocolli della longevità: evidenze cliniche promettenti ma ancora in evoluzione.</p>
+        <a class="lit" href="https://www.nature.com/articles/s42255-025-01387-7" target="_blank" rel="noopener">Letteratura ↗</a>
+      </div>
+      <div class="card">
+        <span class="fn">Antiossidante · immunità</span>
+        <h3>Vitamina C ad alte dosi</h3>
+        <p>Per via endovenosa raggiunge concentrazioni non ottenibili per bocca. Sostiene il sistema immunitario e la sintesi del collagene; studiata come supporto adiuvante in oncologia e sulla qualità di vita. Evidenze in aree specifiche, non conclusive.</p>
+        <a class="lit" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12973930/" target="_blank" rel="noopener">Letteratura ↗</a>
+      </div>
+      <div class="card">
+        <span class="fn">Antiossidante · metabolico</span>
+        <h3>Acido alfa-lipoico (ALA)</h3>
+        <p>Antiossidante attivo sia in ambiente acquoso sia lipidico, capace di rigenerare altri antiossidanti. Utile nel dolore neuropatico e nel supporto metabolico, con un buon profilo di sicurezza.</p>
+        <a class="lit" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7603186/" target="_blank" rel="noopener">Letteratura ↗</a>
+      </div>
+      <div class="card">
+        <span class="fn">Coenzimi · sistema nervoso</span>
+        <h3>Vitamine del gruppo B (B12)</h3>
+        <p>Coenzimi del metabolismo energetico e della funzione neurologica. La vitamina B12 è essenziale per la produzione dei globuli rossi e per il sistema nervoso; la sua carenza causa disturbi ematologici e neurologici.</p>
+        <a class="lit" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10859001/" target="_blank" rel="noopener">Letteratura ↗</a>
+      </div>
+      <div class="card">
+        <span class="fn">Minerale essenziale</span>
+        <h3>Magnesio</h3>
+        <p>Coinvolto in centinaia di reazioni enzimatiche; sostiene la funzione muscolare e nervosa e il metabolismo energetico. È un componente classico delle infusioni multivitaminiche (il cosiddetto "Myers cocktail").</p>
+        <a class="lit" href="https://www.merckmanuals.com/professional/special-subjects/dietary-supplements/intravenous-vitamin-therapy-myers-cocktail" target="_blank" rel="noopener">Letteratura ↗</a>
+      </div>
+      <div class="card">
+        <span class="fn">Molecole di segnalazione</span>
+        <h3>Peptidi</h3>
+        <p>Brevi sequenze di aminoacidi che agiscono come segnali biologici, con funzioni specifiche a seconda del tipo (supporto tissutale, riparativo, metabolico). L'impiego è sempre individualizzato dal medico; per molti peptidi le evidenze cliniche sono ancora in fase di studio.</p>
+      </div>
+    </div>
+    <p class="disclaimer" style="margin-top:32px">⚕️ <b>Nota importante.</b> Le terapie endovenose qui descritte hanno <b>livelli di evidenza variabili</b> e vengono proposte come <b>supporto</b>, all'interno di una valutazione medica personalizzata: non sostituiscono trattamenti con indicazione consolidata. Ogni protocollo, dosaggio e indicazione è stabilito dal medico dopo visita, tenendo conto di storia clinica, esami e terapie in corso.</p>
   </div>
 </section>
 
@@ -496,7 +596,7 @@
         </div>
       </div>
       <div style="display:flex;gap:20px;flex-wrap:wrap;align-items:flex-start;padding-top:6px">
-        <a href="#infiammazione">Infiammazione</a><a href="#degenerazione">Degenerazione</a><a href="#ozonoterapia">Ozonoterapia</a><a href="#patologie">Patologie</a><a href="#faq">FAQ</a><a href="#prenota">Prenota</a>
+        <a href="#infiammazione">Infiammazione</a><a href="#ozonoterapia">Ozonoterapia</a><a href="#ozono-sistemica">Autoemoinfusioni</a><a href="#ev-therapy">Terapie EV</a><a href="#patologie">Patologie</a><a href="recensioni.html">Recensioni</a>
       </div>
     </div>
     <div class="fine">© <span id="yy"></span> Dott. Domenico Bruno Pagano — Iscritto all'Ordine dei Medici (ODM) n. 48864 · Presso Poliambulatorio Fisiobenessere (Segrate, MI) e altre sedi. Tutti i diritti riservati. I contenuti hanno scopo informativo e non sostituiscono il parere medico.</div>
