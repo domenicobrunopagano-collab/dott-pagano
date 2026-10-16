@@ -10,6 +10,9 @@
 <meta name="author" content="Dott. Domenico Bruno Pagano">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <link rel="canonical" href="https://ozonomilano.com/">
+<link rel="alternate" hreflang="it" href="https://ozonomilano.com/">
+<link rel="alternate" hreflang="en" href="https://ozonomilano.com/en/">
+<link rel="alternate" hreflang="x-default" href="https://ozonomilano.com/">
 <meta name="geo.region" content="IT-MI">
 <meta name="geo.placename" content="Segrate, Milano">
 
@@ -92,6 +95,13 @@
   .nav-links a:hover{color:var(--teal)}
   .nav-links .btn{color:#fff}
 
+  /* Language switcher (bandiere) */
+  .lang-switch{display:flex;gap:7px;align-items:center;margin-left:16px}
+  .lang-switch a{width:30px;height:21px;border-radius:4px;overflow:hidden;display:block;border:2px solid transparent;opacity:.55;transition:.2s;box-shadow:0 1px 4px rgba(6,43,38,.2);flex:none}
+  .lang-switch a.active{border-color:var(--gold);opacity:1}
+  .lang-switch a:hover{opacity:1;transform:translateY(-1px)}
+  .lang-switch svg{display:block;width:100%;height:100%}
+
   /* Hamburger + menu mobile per categorie */
   .nav-toggle{display:none;flex-direction:column;justify-content:center;gap:5px;width:44px;height:44px;background:none;border:0;cursor:pointer;padding:0;margin-left:14px}
   .nav-toggle span{display:block;width:26px;height:2px;border-radius:2px;background:var(--teal-deep);transition:.3s}
@@ -109,11 +119,10 @@
   .mobile-menu .mm-cta{display:block;text-align:center;background:var(--cta);color:#fff;font-weight:700;font-size:1.05rem;padding:15px;border-radius:14px;text-decoration:none;margin-top:8px;box-shadow:0 10px 24px rgba(242,106,61,.35)}
 
   @media(max-width:980px){
-    .nav-links a:not(.btn){display:none}
-    .nav-links{gap:12px}
+    .nav-links{display:none}
     .nav-toggle{display:flex}
   }
-  @media(max-width:520px){.brand img.logo-top{height:74px}.nav{height:100px}.nav-links .btn{padding:9px 15px;font-size:.8rem}}
+  @media(max-width:520px){.brand img.logo-top{height:74px}.nav{height:100px}}
 
   .hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;background:var(--teal-deep)}
   .hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%;opacity:1}
@@ -267,6 +276,10 @@
       <a href="#contatti">Contatti</a>
       <a class="btn btn-gold" href="#prenota">Prenota</a>
     </nav>
+    <div class="lang-switch">
+      <a href="/" class="active" aria-label="Italiano" hreflang="it" title="Italiano"><svg viewBox="0 0 3 2"><rect width="3" height="2" fill="#fff"/><rect width="1" height="2" fill="#009246"/><rect width="1" height="2" x="2" fill="#ce2b37"/></svg></a>
+      <a href="/en/" aria-label="English" hreflang="en" title="English"><svg viewBox="0 0 60 30"><rect width="60" height="30" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#C8102E" stroke-width="4"/><path d="M30,0 V30 M0,15 H60" stroke="#fff" stroke-width="10"/><path d="M30,0 V30 M0,15 H60" stroke="#C8102E" stroke-width="6"/></svg></a>
+    </div>
     <button class="nav-toggle" id="navToggle" aria-label="Apri il menu" aria-expanded="false" aria-controls="mobileMenu">
       <span></span><span></span><span></span>
     </button>
