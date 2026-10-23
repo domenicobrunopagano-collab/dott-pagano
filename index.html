@@ -223,6 +223,10 @@
   .booking p{color:rgba(255,255,255,.85);max-width:50ch;margin:0 auto 28px;font-size:1.08rem}
   .booking .eyebrow{color:var(--gold-soft)}
   .booking small{display:block;margin-top:18px;color:rgba(255,255,255,.6);font-size:.85rem}
+  .contact-cta{display:flex;flex-wrap:wrap;justify-content:center;gap:14px}
+  .contact-cta .btn{font-size:1.05rem;padding:17px 30px}
+  .btn-wa{background:#1fa855;color:#fff}.btn-wa:hover{background:#178a45}
+  @media (max-width:600px){.contact-cta{flex-direction:column;align-items:stretch}.contact-cta .btn{justify-content:center}}
 
   .contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
   .contact-grid .card{text-align:center}
@@ -621,9 +625,13 @@
   <div class="wrap">
     <span class="eyebrow">Prenotazioni</span>
     <h2>Prenota la tua visita</h2>
-    <p>Scegli comodamente data e orario tramite MioDottore, oppure contattami telefonicamente per qualsiasi informazione.</p>
-    <a class="btn btn-gold" href="https://www.miodottore.it/domenico-bruno-pagano/anestesista/segrate#addresses-section" target="_blank" rel="noopener">📅 Prenota su MioDottore</a>
-    <small>Verrai reindirizzato al modulo di prenotazione ufficiale.</small>
+    <p>Chiamami o scrivimi su WhatsApp per informazioni, oppure scegli data e orario su MioDottore.</p>
+    <div class="contact-cta">
+      <a class="btn btn-gold" href="tel:+393240410868">📞 Chiama 324 041 0868</a>
+      <a class="btn btn-wa" href="https://wa.me/393240410868?text=Buongiorno%2C%20vorrei%20informazioni%20per%20una%20visita" target="_blank" rel="noopener">💬 Scrivi su WhatsApp</a>
+      <a class="btn btn-ghost" href="https://www.miodottore.it/domenico-bruno-pagano/anestesista/segrate#addresses-section" target="_blank" rel="noopener">📅 Prenota su MioDottore</a>
+    </div>
+    <small>WhatsApp: rispondo appena possibile, di solito in giornata. Per le urgenze rivolgersi al 112.</small>
   </div>
 </section>
 
@@ -640,7 +648,7 @@
       <div class="card"><div class="ico">📍</div><h3>Poliambulatorio Fisiobenessere</h3><p><a href="https://www.google.com/maps/search/?api=1&query=Via+Cesare+Battisti+4+Segrate+Poliambulatorio+Fisiobenessere" target="_blank" rel="noopener">Via Cesare Battisti 4<br>20054 Segrate (MI)</a></p></div>
       <div class="card"><div class="ico">📍</div><h3>Centro Medico Sempione <span class="soon-badge">da settembre</span></h3><p><a href="https://www.google.com/maps/search/?api=1&query=Centro+Medico+Sempione+Via+Melzi+d'Eril+26+Milano" target="_blank" rel="noopener">Via Francesco Melzi d'Eril 26<br>20154 Milano</a></p></div>
       <div class="card"><div class="ico">📍</div><h3>Centro Medico Cesanese <span class="soon-badge">da settembre</span></h3><p><a href="https://www.google.com/maps/search/?api=1&query=Centro+Medico+Cesanese+Via+Petrarca+12+Cesano+Maderno" target="_blank" rel="noopener">Via Francesco Petrarca 12<br>20811 Cesano Maderno (MB)</a></p></div>
-      <div class="card"><div class="ico">📞</div><h3>Telefono</h3><p><a href="tel:+393240410868">+39 324 041 0868</a><br><a href="tel:+39022137995" style="font-weight:500;font-size:.92rem">+39 02 2137995 (studio)</a></p></div>
+      <div class="card"><div class="ico">📞</div><h3>Telefono</h3><p><a href="tel:+393240410868">+39 324 041 0868</a> · <a href="https://wa.me/393240410868?text=Buongiorno%2C%20vorrei%20informazioni%20per%20una%20visita" target="_blank" rel="noopener">WhatsApp</a><br><a href="tel:+39022137995" style="font-weight:500;font-size:.92rem">+39 02 2137995 (studio)</a></p></div>
       <div class="card"><div class="ico">✉️</div><h3>Email</h3><p><a href="mailto:dottpagano@ozonomilano.info">dottpagano@ozonomilano.info</a></p></div>
     </div>
   </div>
