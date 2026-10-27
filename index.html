@@ -716,5 +716,6 @@
   mm.querySelectorAll('a').forEach(function(a){ a.addEventListener('click',function(){ setMenu(false); }); });
   document.addEventListener('keydown',function(e){ if(e.key==='Escape') setMenu(false); });
 </script>
+  <script>/* conteggio clic Umami */document.querySelectorAll('a[href^="tel:"]').forEach(function(a){a.setAttribute('data-umami-event','home-chiama')});document.querySelectorAll('a[href*="wa.me"]').forEach(function(a){a.setAttribute('data-umami-event','home-whatsapp')});document.querySelectorAll('a[href*="miodottore"]').forEach(function(a){a.setAttribute('data-umami-event','home-miodottore')});</script>
 </body>
 </html>
